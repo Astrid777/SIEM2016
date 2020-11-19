@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApplication2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2"
+        mc:Ignorable="d"
+        Title="Обработчик событий" Height="691.021" Width="1044.213"
+>
+
+    <Grid x:Name="LayoutRoot" Background="White" Margin="41,39,2,13">
+
+        <!-- <Button x:Name="Button1" Margin="585,49,173,497"  Content="Считать события" Click="Button_Click" />
+        <DataGrid x:Name="DataGrid2" Loaded="Window_Loaded" Margin="0,316,480,-1" Grid.ColumnSpan="3"/> -->
+
+        <DataGrid Name="DataGrid1" Loaded="Window_Loaded" Margin="0,0,281,358"/>
+        <Label Margin="0,-34,786,608" Content="Все события" Grid.ColumnSpan="2" BorderThickness="1"></Label>
+        <Label Margin="10,302,786,274" Content="Выборки"/>
+        <Label Margin="753,10,43,558" Content="Критерии для выборки"/>
+        <TextBlock x:Name="TextBlock" Text="" Margin="10,334,281,10" IsHyphenationEnabled="False" />
+    </Grid>
+</Window>
